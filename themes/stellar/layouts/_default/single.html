@@ -1,0 +1,25 @@
+{{ define "main" }}
+    				<!-- Main -->
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main">
+					
+								{{- with .Params.cover_image -}}
+								{{- $img_url := print "/images/" . -}}
+								{{ $img := resources.Get $img_url }}
+								{{ $img := $img.Fill "1451x540 smart" }}
+									<img src="
+									{{- $img.RelPermalink -}}" id="cover-image"/>
+								{{- end -}}
+								{{ with .Params.caption }}
+									<div class="caption">{{ . }}</div>
+								{{ end }}
+								</span>
+
+								<section>
+									{{ .Content }}
+								</section>
+							</section>
+
+{{ end }}

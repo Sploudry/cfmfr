@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head.html" . -}}
+    <body class="is-preload {{ replace .Name " " "-" | lower }}">
+        <div id="wrapper">
+            
+            {{- partial "header.html" . -}}
+            <div id="main">
+                {{- block "main" . }}{{- end }}
+            </div>
+            {{- partial "footer.html" . -}}
+            {{ partial "scripts" . }}
+        </div>
+    </body>
+</html>

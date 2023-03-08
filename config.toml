@@ -1,0 +1,39 @@
+title = "Craig Foden MFR"
+theme = "stellar"
+
+
+[markup.tableOfContents]
+    ordered = false
+    startLevel = 2
+    endLevel = 2
+
+[[menu.footer]]
+    identifier = "home"
+    name = "home"
+    # pre = "<i class='far fa-angry'></i>"
+    url = "/"
+    weight = "100"
+[[menu.footer]]
+    identifier = "about"
+    name = "about"
+    # pre = "<i class='far fa-angry'></i>"
+    url = "/about/"
+    weight = "200"
+[[menu.footer]]
+    identifier = "treatments"
+    name = "treatments & pricing"
+    # pre = "<i class='far fa-angry'></i>"
+    url = "/treatments/"
+    weight = "300"
+[[menu.footer]]
+    identifier = "mfr"
+    name = "Myofascial Release"
+    # pre = "<i class='far fa-angry'></i>"
+    url = "/myofascial-release/"
+    weight = "400"
+[[menu.footer]]
+    identifier = "contact"
+    name = "contact"
+    # pre = "<i class='far fa-angry'></i>"
+    url = "/myofascial-release/"
+    weight = "500"

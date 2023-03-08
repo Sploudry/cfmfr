@@ -1,0 +1,65 @@
+			{{ with site.Data.footer }}
+				{{ if .enable }}
+				<!-- Footer -->
+					<footer id="footer">
+						{{ with .section_1 }}
+						{{ if .enable }}
+						<section>
+							<h2>{{ .title }}</h2>
+							<p>{{ .text }}</p>
+							<ul class="actions">
+								{{ range .actions }}
+								<li><a href="{{ .url }}" class="button">{{ .label }}</a></li>
+								{{ end }}
+							</ul>
+						</section>
+						{{ end }}							
+						{{ end }}
+
+						{{ if .footer_menu }}
+						<section>
+								<ul class="alt">
+									{{ range site.Menus.footer }}
+										<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+									{{ end }}
+								</ul>
+						</section>
+						{{ end }}
+
+						{{ with .contact }}
+							
+						<section>
+							<h2>{{ .title }}</h2>
+							<dl class="alt">
+								{{ with .address }}
+								<dt>Address</dt>
+								<dd>{{ .street }} &bull; {{ .town }}, {{ .zip }} &bull; {{ .country }}</dd>
+								{{ end }}
+								{{ with .phone }}
+								<dt>Phone</dt>
+								<dd>{{ . }}</dd>
+								{{ end }}
+								{{ with .email }}
+								<dt>Email</dt>
+								<dd><a href="mailto:{{ . }}">{{ . }}</a></dd>
+								{{ end }}
+							</dl>
+						{{ end }}
+
+							{{ with .social_media }}
+								{{ if .enable }}
+									
+								<ul class="icons">
+									{{ range .socials }}
+									<li><a href="{{ .url }}" class="{{ .icon }}" title="{{ .social }}"><span class="label">{{  .  }}</span></a></li>
+									{{ end }}
+								</ul>
+								{{ end }}
+							{{ end }}
+						</section>
+						{{ with .copyright }}
+						<p class="copyright">&copy; {{ now.Year }} {{ .text }} <a href="{{ .url }}">{{ .name }}</a>.</p>
+						{{ end }}
+					</footer>
+					{{ end }}
+			{{ end }}

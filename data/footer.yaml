@@ -1,0 +1,76 @@
+enable: true
+
+section_1:
+  enable: false
+  title: Get in touch
+  text: This is the footer section that will appear at the bottom of every page.
+  actions:
+  - url: /contact/
+    label: Contact form
+
+footer_menu: true
+
+
+contact:
+  title: Contact
+  address:
+    street: 123 Carterknowle
+    town: Sheffield
+    zip: 
+    country: UK
+  phone: '07807 078005'
+  email: craig@craigfoden.com
+
+social_media:
+  enable: true
+  socials:
+  - social: Facebook
+    url: https://www.facebook.com/massageonthespot/
+    icon: fa icon brands fa-facebook-f alt
+  - social: Instagram
+    url: https://www.instagram.com/craigonthespot/
+    icon: fa icon brands fa-instagram alt
+  - social: Linked_In
+    url: https://www.linkedin.com/in/craig-foden-mfr-223011199
+    icon: fa icon brands fa-linkedin-in alt
+  - social: WhatsApp
+    url: #
+    icon: fa icon brands fa-whatsapp alt
+  - social: Email
+    url: mailto:craigfodenmfr@gmail.com
+    icon: fa icon alt fa-envelope
+  # - social: Tik Tok
+    # url: #
+    # icon: icon brands fa-tiktok alt
+  # - social: Snapchat
+    # url: #
+    # icon: icon brands fa-snapchat alt
+  # - social: Pinterest
+    # url: #
+    # icon: icon brands fa-pinterest alt
+  # - social: Github
+    # url: https://github.com/
+    # icon: icon brands fa-github alt
+  # - social: Gitlab
+    # url: https://gitlab.com/
+    # icon: icon brands fa-gitlab alt
+  # - social: Dribbble
+    # url: #
+    # icon: icon brands fa-dribbble alt
+  # - social: Behance
+    # url: #
+    # icon: icon brands fa-behance alt
+  # - social: Twitter
+    # url: #
+    # icon: icon brands fa-twitter alt
+  # - social: Mastondon
+    # url: #
+    # icon: icon brands fa-mastodon alt
+  # - social: Youtube
+    # url: #
+    # icon: icon brands fa-youtube alt
+  
+copyright:
+  text: 'website by:'
+  url: https://www.shefweb.com
+  name: Shefweb

@@ -1,0 +1,18 @@
+enable: true
+
+section_title: Treatments
+
+features:
+- icon: icon solid major style1 fa-code
+  heading: Myofascial Release
+  text: I'm a trained John F Barnes MFR Therapist, I work with you to assess postural alignments and functional mobility.
+- icon: icon major style3 fa-copy
+  heading: Sports and therapeutic massage
+  text: For peak performance, injury recovery and prevention, advanced soft tissue massage techniques are used to assess and maintain hard working, stressed and fatigued ‘muscles’.
+- icon: icon major style5 fa-gem
+  heading: Bodywork & MFR training
+  text: Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.
+
+button:
+  url: /treatments/
+  text: Learn More

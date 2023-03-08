@@ -1,0 +1,26 @@
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><a href="/"><img src="/images/logo.svg" alt="" /></a></span>
+						<h1>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}</h1>
+						{{ with .Params.subhead }}
+						<p>{{ . | safeHTML }}</p>
+						{{ end }}
+					</header>
+
+				<!-- Nav -->
+				{{ if .IsHome }}
+					
+				<nav id="nav">
+					<ul>
+						<li><a href="#intro" class="active">Introduction</a></li>
+						<li><a href="#first">Treatments</a></li>
+						<li><a href="#cta">Book</a></li>
+						<li><a href="/test/">Test section</a></li>
+					</ul>
+				</nav>
+				{{- else -}}
+
+					{{ with .TableOfContents }}
+					<nav id="nav">{{ . }}</nav>
+					{{ end }}
+				{{ end }}
