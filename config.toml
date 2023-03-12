@@ -1,5 +1,6 @@
 title = "Craig Foden MFR"
 theme = "stellar"
+baseURL = "https://craigfoden.netlify.app/"
 
 
 [markup.tableOfContents]
